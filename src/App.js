@@ -1,24 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import SlideCard from './components/CardSlider';
+import Header from './components/Header';
 
 function App() {
+  const user = {
+    pictureUrl : "https://randomuser.me/api/portraits/women/72.jpg",
+    name : "THEO SOREL",
+    position : "DESIGNER",
+    about : "Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet cupiditate voluptatibus numquam. Commodi a magnam dolor iure consectetur quas facere !"
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header></Header>
+    <SlideCard></SlideCard>
+    </>
   );
 }
 

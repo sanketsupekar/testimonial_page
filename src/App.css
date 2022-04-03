@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* div {
+  border: 1px solid black;
+} */
+
+/* ########## Animation ######### */
+button {
+  transition: transform 0.3s;
+}
+button:hover {
+  transform: scale(1.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ########## Slideshow ########### */
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+.slideshowDot {
+  cursor: pointer;
+  background-color: #c4c4c4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slideshowDot.active {
+  background-color: #9500ff;
+}
+
+/* ############# Responsive Media Quries Testimonial Page ############### */
+@media (max-width: 480px) {
+  html {
+    font-size: 60% !important;
+  }
+  .slideshowContainer {
+    width: 100% !important;
+    position: initial !important;
+  }
+  .testimonialCardContainer {
+    width: 20rem !important;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (min-width: 480px) and (max-width: 720px) {
+  html {
+    font-size: 80% !important;
   }
-  to {
-    transform: rotate(360deg);
+  .slideshowContainer {
+    width: 90% !important;
+  }
+  .testimonialCardContainer {
+    width: 25rem !important;
+  }
+}
+@media (min-width: 720px) and (max-width: 1080px) {
+  html {
+    font-size: 90% !important;
+  }
+  .slideshowContainer {
+    width: 80% !important;
+  }
+  .testimonialCardContainer {
+    width: 25rem !important;
   }
 }
