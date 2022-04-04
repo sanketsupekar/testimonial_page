@@ -3,6 +3,7 @@
 } */
 
 /* ########## Animation ######### */
+
 button {
   transition: transform 0.3s;
 }
@@ -30,6 +31,11 @@ button:hover {
   html {
     font-size: 60% !important;
   }
+  .input-group {
+    width: 70% !important;
+    padding: 5% !important;
+  }
+
   .slideshowContainer {
     width: 100% !important;
     position: initial !important;

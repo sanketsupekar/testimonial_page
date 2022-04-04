@@ -1,6 +1,7 @@
 import './App.css';
 import SlideCard from './components/CardSlider';
-import Header from './components/Header';
+import SubHeader from './components/SubHeader';
+import TestimonialForm from './components/TestimonialForm';
 
 function App() {
   const user = {
@@ -11,8 +12,13 @@ function App() {
   }
   return (
     <>
-    <Header></Header>
+    <div className='container'>
+    <SubHeader title ="TESTIMONIAL PAGE"></SubHeader>
     <SlideCard></SlideCard>
+    <SubHeader title ="YOUR EXPERIENCE WITH LMS"></SubHeader>
+    <TestimonialForm></TestimonialForm>
+    </div>
+    
     </>
   );
 }

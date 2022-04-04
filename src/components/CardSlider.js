@@ -66,7 +66,7 @@ export default function SlideCard() {
                 key={idx}
                 className={`slideshowDot${
                   index === idx ? " active" : ""
-                } m-2 my-5 d-inline-block border rounded-circle ${
+                } m-2 my-4 d-inline-block border rounded-circle ${
                   index === idx ? "bg-dark" : ""
                 }`}
                 style={{ width: "0.5rem", height: "0.5rem" }}
